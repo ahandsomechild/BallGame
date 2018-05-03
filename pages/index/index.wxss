@@ -1,0 +1,20 @@
+
+page{
+  background:yellow
+}
+.container{
+  background: yellow;
+}
+#ball{
+  position: absolute;
+  width:30px;
+  height:30px;
+  border-radius:50%;
+  background: black;
+}
+#board{
+  position: absolute;
+  width:100px;
+  height:15px; 
+  background: black;
+}

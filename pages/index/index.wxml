@@ -1,0 +1,20 @@
+<!-- index.wxml
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+  <movable-area style="height: {{aheight+'px'}}; width: 100%; ">
+    <movable-view style="height: {{aheight+'px'}}; width: {{awidth+'px'}}; background:black;" x="{{aleft}}"  direction="all" bindchange="onChange">
+    </movable-view>
+  </movable-area>
+  <!-- <view  id="board" style="left:{{aleft+'px'}};bottom:{{abottom+'px'}}"></view> -->
+  <view bindtap="run" id="ball" style="width:{{bradius+'px'}};height:{{bradius+'px'}};left:{{bleft+'px'}};bottom:{{bbottom+'px'}}"></view>
+
